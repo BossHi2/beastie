@@ -17,6 +17,8 @@ document.body.onpointermove = event => {
 }
 
 function beastClick(){
+    var audio = new Audio('bark.mp3');
+    audio.play();
     var randNum = 1+(Math.random() * 79);
     while(Math.abs(randNum-prevNum) < 3)
         randNum = 1+(Math.random() * 79);
